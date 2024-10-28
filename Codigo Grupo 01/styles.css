@@ -1,0 +1,389 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index-page {
+    overflow: hidden;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #2c3e50;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Barra de Navegación */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header nav .logo img {
+    height: 40px;
+}
+
+header nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+header nav .nav-links li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+header nav .download-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+header nav .download-button:hover {
+    background-color: #333;
+}
+
+/* Sección Principal */
+.hero {
+    max-width: 550px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.hero .lema-image {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.subtext-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.explore-button {
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+}
+
+.explore-button:hover {
+    background-color: #333;
+}
+
+/* Sección ¿Por qué Quiet? */
+.about-page {
+    overflow: hidden;
+}
+
+.about-us {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduce el espacio entre el título y el contenido */
+    padding: 40px 20px;
+    background-color: #fff;
+    min-height: 80vh; /* Centra la sección verticalmente */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-quiet-image {
+    max-width: 250px;
+    margin-bottom: 10px; /* Reduce el espacio entre el título y la imagen */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 38%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    width: 45%;
+    max-width: 450px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #000;
+}
+
+/* Página de Inicio de Sesión */
+.login-logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #000;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #333;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-link {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #555;
+}
+
+
+.or {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-login .social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.user-interface-page {
+    overflow: hidden; /* Evita desplazamientos inesperados */
+}
+
+.user-icon .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.welcome-section {
+    margin-bottom: 20px; /* Espacio entre el texto de bienvenida y los botones */
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.welcome-user {
+    max-width: 400px;
+}
